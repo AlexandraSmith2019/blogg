@@ -5,11 +5,15 @@
         </title>
     </head>
     <body>
-        <h1>
+        <h2>
             Julklapptips
-        </h1>
-        <p>
-            Lämnade du klappköpet till sista minuten igen? Frukta icke, här kommer tips på klappar som passar alla.
-        </p>
+        </h2>
+        <p>Lämnade du klappköpet till sista minuten igen?</p>            
+        <p>Frukta icke, här kommer tips på klappar som passar alla!</p>
+                {{posts}}
+                {% for post in posts %}
+                    {[ post ]}
+                {% end for %}
+        
     </body>
 </html>
